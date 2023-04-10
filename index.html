@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="assets/css/calculator.css" />
+        <title>Calculator</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="calculator">
+                <div class="display">
+                    <div class="content">
+                        <div class="input"></div>
+                        <div class="output"></div>
+                    </div>
+                </div>
+                <div class="keys">
+                    <div value="AC" onclick="clearInput()" class="key action">
+                        <span>AC</span>
+                    </div>
+                    <div value="Del" onclick="deleteInput()" class="key action">
+                        <span>Del</span>
+                    </div>
+                    <div></div>
+                    <div value="/" onclick="addToInput('/')" class="key operator">
+                        <span>÷</span>
+                    </div>
+                    <div value="7" onclick="addToInput('7')" class="key">
+                        <span>7</span>
+                    </div>
+                    <div value="8" onclick="addToInput('8')" class="key"><span>8</span></div>
+                    <div value="9" onclick="addToInput('9')" class="key"><span>9</span></div>
+                    <div value="*" onclick="addToInput('*')" class="key operator">
+                        <span>*</span>
+                    </div>
+                    <div value="4" onclick="addToInput('4')" class="key"><span>4</span></div>
+                    <div value="5" onclick="addToInput('5')" class="key"><span>5</span></div>
+                    <div value="6" onclick="addToInput('6')" class="key"><span>6</span></div>
+                    <div value="-" onclick="addToInput('-')" class="key operator">
+                        <span>-</span>
+                    </div>
+                    <div value="1" onclick="addToInput('1')" class="key"><span>1</span></div>
+                    <div value="2" onclick="addToInput('2')" class="key"><span>2</span></div>
+                    <div value="3" onclick="addToInput('3')" class="key"><span>3</span></div>
+                    <div value="+" onclick="addToInput('+')" class="key operator">
+                        <span>+</span>
+                    </div>
+                    <div value="00" onclick="addToInput('00')" class="key"><span>00</span></div>
+                    <div value="0" onclick="addToInput('0')" class="key"><span>0</span></div>
+                    <div value="." onclick="addToInput('.')" class="key"><span>.</span></div>
+                    <div value="=" onclick="calculate()" class="key equal operator">
+                        <span>=</span>
+                    </div>
+                </div>
+                <script src="assets/js/calculator.js"></script>
+            </div>
+        </div>
+    </body>
+</html>
