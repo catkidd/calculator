@@ -7,15 +7,31 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
 }
+.blur-img {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.623)),
+        url("https://images.unsplash.com/photo-1680289184206-758a33cbe01b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
     height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.623)),
+        url("https://images.unsplash.com/photo-1680289184206-758a33cbe01b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 .calculator {
-    background: #3a3a3a;
+    background-color: rgb(58, 58, 58);
     width: 100%;
     max-width: 375px;
     min-height: 640px;
@@ -23,6 +39,7 @@ body {
     flex-direction: column;
     border-radius: 1.5rem;
     overflow: hidden;
+    box-shadow: 8px 8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 .display {
     background-color: #4d4d4d;
